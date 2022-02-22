@@ -24,7 +24,7 @@ jobs:
              for dir in $(ls examples); do
                    cd ${GITHUB_WORKSPACE}/examples/"$dir";
                    cmake . -DLP_SOLVE=/usr/lib/lpsolve/liblpsolve55.so;
-                   cd ../..
+                   cd ../..;
              done
              rm -rf build;
              mkdir build;
