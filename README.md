@@ -1,6 +1,6 @@
 <p align="center"><img src="doc/logo/volesti_logo.jpg"></p>
 
-**VolEsti** is a `C++` library for volume approximation and sampling of convex bodies (*e.g.* polytopes) with an `R` and limited `python` interface. **VolEsti** is part of the [GeomScale](https://geomscale.github.io) project.
+**VolEsti** is a `C++` library for volume approximation and sampling of convex bodies (*e.g.* polytopes) with an `R`  interface. For a limited `Python` interface we refer to package [dingo](https://github.com/GeomScale/dingo). **VolEsti** is part of the [GeomScale](https://geomscale.github.io) project.
 
 [![CRAN status](https://www.r-pkg.org/badges/version/volesti)](https://cran.r-project.org/package=volesti)
 [![CRAN downloads](https://cranlogs.r-pkg.org/badges/volesti)](https://cran.r-project.org/package=volesti)
@@ -24,7 +24,6 @@
 
 * [Using the R Interface](doc/r_interface.md)
 * [Using the C++ Interface](doc/cpp_interface.md)
-* [Using the Python Interface](volestipy/README.md)
 * [Wikipage with Tutorials and Demos](https://github.com/GeomScale/volesti/wiki)
 * [Tutorial given to PyData meetup](https://vissarion.github.io/tutorials/volesti_tutorial_pydata.html)
 * [Tutorial on (truncated) logconcave sampling (R and C++)](https://papachristoumarios.github.io/2020/07/21/Sampling-from-high-dimensional-truncated-log-concave-densities-with-volesti)
@@ -37,7 +36,8 @@
 
 ### © Copyright and Licensing 
 
-Copyright (c) 2012-2020 Vissarion Fisikopoulos  
-Copyright (c) 2018-2020 Apostolos Chalkis  
+Copyright (c) 2012-2022 Vissarion Fisikopoulos  
+Copyright (c) 2018-2022 Apostolos Chalkis  
+Copyright (c) 2020-2022 Elias Tsigaridas  
 
 You may redistribute or modify the software under the [GNU Lesser General Public License](/LICENSE) as published by Free Software Foundation, either version 3 of the License, or (at your option) any later version. It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY.  
