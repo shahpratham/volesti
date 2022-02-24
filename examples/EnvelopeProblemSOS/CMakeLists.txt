@@ -52,6 +52,7 @@ if (USE_OpenMP)
     find_package(OpenMP REQUIRED)
 endif (USE_OpenMP)
 find_package(Python3 REQUIRED)
+find_package(Boost REQUIRED)
 find_package(Python3 COMPONENTS Development NumPy)
 add_executable(EnvelopeProblem ${TARGETS})
 
