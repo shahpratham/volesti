@@ -35,5 +35,5 @@ jobs:
              cmake -D CMAKE_CXX_COMPILER=${{ matrix.compilers }} -D DISABLE_NLP_ORACLES=ON -D USE_MKL=OFF ../test;
              make;
              ctest --verbose;
-             - name: Setup tmate session
-                   uses: mxschmitt/action-tmate@v3
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
