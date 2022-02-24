@@ -7,8 +7,8 @@
 ##############################################################################
 name: cmake-clang
 
-on: [push, pull_request]
-
+# on: [push, pull_request]
+on: [pull_request]
 jobs:
   build:
     name: ${{ matrix.compilers }}
