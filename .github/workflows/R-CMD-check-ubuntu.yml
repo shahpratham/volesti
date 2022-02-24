@@ -6,8 +6,8 @@
 # Licensed under GNU LGPL.3, see LICENCE file
 ##############################################################################
 
-# on: [push, pull_request]
-on: [pull_request]
+on: [push, pull_request]
+
 name: R-CMD-check-ubuntu
 
 jobs:
