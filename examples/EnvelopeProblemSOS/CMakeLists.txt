@@ -56,6 +56,15 @@ find_package(Boost REQUIRED)
 find_package(Python3 COMPONENTS Development NumPy)
 add_executable(EnvelopeProblem ${TARGETS})
 
+include("../../external/cmake-files/Eigen.cmake")
+GetEigen()
+
+include("../../external/cmake-files/Boost.cmake")
+GetBoost()
+
+include("../../external/cmake-files/LPSolve.cmake")
+GetLPSolve()
+
 if (NOT BOOST_DIR)
     find_package(Boost 1.67.0 COMPONENTS *boost usr/local/)
     set(BOOST_DIR ${Boost_INCLUDE_DIRS})
