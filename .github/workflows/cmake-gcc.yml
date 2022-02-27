@@ -26,7 +26,7 @@ jobs:
              sudo apt-get install ${{ matrix.compilers }} lp-solve;
              sudo apt-get install cmake libblkid-dev e2fslibs-dev libboost-all-dev libaudit-dev;
              sudo apt-get install python3;
-             sudo apt-get install python-numpy;
+             pip install numpy;
              for dir in $(ls examples); do
                    cd ${GITHUB_WORKSPACE}/examples/"$dir";
                    cmake . -DLP_SOLVE=/usr/lib/lpsolve/liblpsolve55.so;

@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=/usr/local/lib
+
+Name: arpack
+Description: Collection of Fortran77 subroutines designed to solve large scale eigenvalue problems
+Version: 3.9.0
+URL: https://github.com/opencollab/arpack-ng/
+Requires.private: arpack
+Libs: -L${libdir} -lparpack
+Libs.private: -lmkl_gf_lp64 -lmkl_gnu_thread -lmkl_core -lgomp -lpthread -lm -ldl
