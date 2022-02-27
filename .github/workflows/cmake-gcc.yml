@@ -31,7 +31,7 @@ jobs:
                    cd ${GITHUB_WORKSPACE}/examples/"$dir";
                    if [ "$dir" != "optimization_spectrahedra" ]; then
                          cmake . -DLP_SOLVE=/usr/lib/lpsolve/liblpsolve55.so;
-                   fi
+                   fi;
                    cd ../..;
              done;
              rm -rf build;
