@@ -20,8 +20,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2.3.4
       - uses: "actions/setup-python@v2"
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
       - run: sudo apt-get update || true;
              sudo apt-get install ${{ matrix.compilers }} lp-solve;
              sudo apt-get install cmake libblkid-dev e2fslibs-dev libboost-all-dev libaudit-dev;
@@ -30,18 +28,6 @@ jobs:
              for dir in $(ls examples); do
                    cd ${GITHUB_WORKSPACE}/examples/"$dir";
                    if [ "$dir" != "optimization_spectrahedra" ]; then
-                         cmake . -DLP_SOLVE=/usr/lib/lpsolve/liblpsolve55.so;
-                   else
-                         sudo apt install gfortran;
-                         cd ..;
-                         git clone https://github.com/m-reuter/arpackpp;
-                         cd arpackpp;
-                         ./install-openblas.sh;
-                         ./install-arpack-ng.sh;
-                         cp -R ${GTIHUB_WORKSPACE}/examples/arpackpp/external ${GTIHUB_WORKSPACE}/examples/optimization_spectrahedra/;
-                         rm -rf arpackpp;
-                         rm -rf spectrahedra;
-                         cd ${GITHUB_WORKSPACE}/examples/"$dir";
                          cmake . -DLP_SOLVE=/usr/lib/lpsolve/liblpsolve55.so;
                    fi;
                    cd ../..;
