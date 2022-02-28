@@ -31,7 +31,7 @@ jobs:
                    cd ${GITHUB_WORKSPACE}/examples/"$dir";
                    if [ "$dir" != "optimization_spectrahedra" ]; then
                          cmake . -DLP_SOLVE=/usr/lib/lpsolve/liblpsolve55.so;
-                   else;
+                   else
                          sudo apt install gfortran;
                          cd ..;
                          git clone https://github.com/m-reuter/arpackpp;
