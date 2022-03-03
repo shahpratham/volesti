@@ -30,6 +30,7 @@ jobs:
                    if [ "$dir" != "optimization_spectrahedra" ]; then
                          cmake . -DLP_SOLVE=/usr/lib/lpsolve/liblpsolve55.so;
                          make;
+                   fi;
                   #  else
                         # sudo apt install gfortran;
                         # sudo apt-get install libarpack2-dev;
@@ -43,7 +44,6 @@ jobs:
                         # rm -rf arpackpp;
                         # cd ${GITHUB_WORKSPACE}/examples/"$dir";
                         # cmake . -DLP_SOLVE=/usr/lib/lpsolve/liblpsolve55.so;
-                   fi;
                    cd ../..;
              done;
              rm -rf build;
