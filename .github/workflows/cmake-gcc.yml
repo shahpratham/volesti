@@ -29,7 +29,7 @@ jobs:
                    cd ${GITHUB_WORKSPACE}/examples/"$dir";
                    if [ "$dir" != "optimization_spectrahedra" ]; then
                          cmake . -DLP_SOLVE=/usr/lib/lpsolve/liblpsolve55.so;
-                          make;
+                         make;
                   #  else
                         # sudo apt install gfortran;
                         # sudo apt-get install libarpack2-dev;
