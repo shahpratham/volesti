@@ -26,6 +26,8 @@ jobs:
              sudo apt-get install cmake libblkid-dev e2fslibs-dev libboost-all-dev libaudit-dev;
              sudo apt-get install python3;
              pip install numpy;
+             sudo apt install libspdlog-dev;
+             sudo apt-get install intel-mkl-full;
              for dir in $(ls examples); do
                    cd ${GITHUB_WORKSPACE}/examples/"$dir";
                    if [ "$dir" != "optimization_spectrahedra" ]; then
